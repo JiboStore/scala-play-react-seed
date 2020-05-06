@@ -5,8 +5,7 @@ function getSummary(cb) {
   })
     .then(checkStatus)
     .then(parseJSON)
-    .then(cb)
-    .catch(err => console.log(err));
+    .then(cb);
 }
 
 function checkStatus(response) {
